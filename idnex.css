@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,600;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,600;0,700;1,500&display=swap');
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    box-sizing: border-box;
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ============================= */
+
+/* =============================
+   1. Layout
+   ============================= */
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 100%;
+}
+.flex-item {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+    margin: 2rem;
+}
+.banner {
+    text-align: center;
+    padding: 1.7rem;
+    margin-bottom: 2rem;
+    border-radius: 7px;
+}
+form {
+    box-sizing: content-box;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 3.4rem;
+}
+input {
+    margin: 1.4rem 0; 
+}
+.textbox {
+    justify-content: center;
+}
+.formbox {
+    flex-grow: 2;
+    justify-content: space-around;
+}
+
+/* =============================
+   2. Typography
+   ============================= */
+
+:root {
+    --font-size: 10px;
+    --font-family: Poppins;
+}
+html {
+    font-size: var(--font-size);
+    font-family: var(--font-family);
+    color: var(var(--primary-text-color));
+}
+h1 {
+    font-size: 5rem;
+    line-height: 5.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+p {
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+    font-weight: 500;
+    margin-top: 0.5rem;
+}
+.banner {
+    font-size: 1.5rem;
+    line-height: 2.8rem;
+    letter-spacing: 0.027rem;
+}
+.banner strong {
+    font-weight: 700;
+}
+input {
+    font-size: 1.4rem;
+    line-height: 2.6rem;
+    font-weight: 600;
+    letter-spacing: 0.025rem;
+    text-align: left;
+    padding: 0 3.2rem;
+}
+button {
+    font-size: 1.5rem;
+    line-height: 2.6rem;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+.sidenote {
+    font-size: 11px;
+    line-height: 26px;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 0.5rem;
+    opacity: 0.7;
+}
+.sidenote strong {
+    font-weight: 700;
+}
+
+/* =============================
+   3. Colors
+   ============================= */
+:root {
+    --primary-color: #ff7979;
+    --primary-color-background: rgba(255, 121, 121, 0.7);
+    --secondary-color: #38CC8B;
+    --ternary-color: #5E54A4;
+    --primary-text-color: #3D3B48;
+    --light-color: #ffffff;
+}
+body {
+   background-color: var(--primary-color);
+   background-image: url("./images/bg-intro-desktop.png");
+}
+p, h1 {
+    color: var(--light-color);
+}
+.banner {
+    background-color: var(--ternary-color);
+    color:var(--light-color)
+}
+form {
+    background-color: var(--light-color);
+}
+button {
+    background-color: var(--secondary-color);
+    color:var(--light-color)
+}
+
+.red-text {
+    color:var(--primary-color);
+}
+
+/* Other */ 
+/* Buttons */
+button {
+    outline: none;
+    border: none;
+    border-radius: 7px;
+    box-shadow: 0 5px 1px #49a07bc2;
+}
+button:hover {
+    filter: brightness(1.5);
+}
+button:active {
+    filter:brightness(0.8)
+}
+/* Banner */ 
+.banner {
+    box-shadow: 0px 7px 1px #a02a2a7a;
+}
+/* Form */
+form {
+    box-shadow: 0px 7px 1px #a02a2a7a;
+}
+input:focus {
+    border: solid 0.1px gray;
+    outline: solid 1px var(--ternary-color)
+} 
+.invalid {
+    border: none;
+    outline: solid 1.5px red;
+    color: red;
+    font-weight: 500;
+    text-decoration: none;
+    background-image: url("./images/icon-error.svg");
+    background-repeat: no-repeat;
+    background-position: 95%;
+
+}
+.invalid:focus {
+    outline: solid 1.5px red;
+    border: solid 0.3px rgb(221, 184, 184);
+}
+.error-message {
+    align-self: flex-end;
+    color: red;
+    margin-bottom: 1rem;
+    display:none;
+}
+
+@media screen and (max-width: 680px) {
+    .container {
+        width: 100%;
+        flex-direction: column;
+    }
+    .flex-item {
+        max-width: 80%;
+    }
+    .textbox {
+        margin-top: 6rem;
+    }
+    h1 {
+        font-size: 2.8rem;
+        line-height: 3.6rem;
+        text-align: center;
+    }
+    p {
+        text-align: center;
+    }
+}
